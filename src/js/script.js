@@ -8,61 +8,21 @@
 // var; pode redeclarar e acessar fora do escopo
 //let nao pode redeclarar e nao consegue acessar fora do escopo
 
+// exercicio 1
 
-var exemplo1="Ola dev var";
-console.log(exemplo1);
+const p=20;
+const v=10;
 
-let exemplo2="Ola dev let";
-console.log(exemplo2);
+let precofinal = p - v;
+console.log("O valor é:", precofinal )
 
-const exemplo3="Ola dev const";
-console.log(typeof exemplo3);
+// exercicio 2
+// Verificação de Segurança (Login e Token)
+// no banco, para autorizar uma transição, precisamos que o usuário esteja logado e que o token de segurança seja válido.
 
-let exemplo4=20;
-console.log(typeof exemplo4);
+const token=100;
+const usuariologado=1;
+const transaçaoautorizada= usuariologado === 1 && token >= 10;
+console.log("Transação Autorizada com Sucesso!", transaçaoautorizada);
 
-let exemplo5=true;
-console.log( typeof exemplo5);
-
-let exempleo6={nome:"fiap"};
-console.log(typeof exempleo6);
-
-let emexplo7=["Java", "python", "C#"];
-console.log(emexplo7);
-
-//variável indefinida
-let exemplo8;
-console.log(exemplo8);
-
-// variável vazia
-let exemplo9=null;
-console.log(exemplo9)
-
-//( método)
-//{objeto}
-//[array]
-
-// OPERADORES ARITMÉTICOS
-
-const valor1="20";
-const valor2=10;
-
-console.log(valor1+valor2)
-console.log(valor1/valor2)
-console.log(valor1-valor2)
-console.log(valor1*valor2)
-console.log(valor1**valor2)
-
-// OPERADORES LÓGICOS
-
-console.log(valor1 < valor2);
-console.log(valor1 >10 && valor2 != 20);
-console.log(valor2 < 5 || valor1 < 50);
-
-//OPERADORES DE COMPARAÇÃO
-
-console.log(valor1 < valor2);
-console.log(valor1 >= valor2);
-console.log(valor1 != valor2);
-console.log(valor1 === valor2);
-console.log("O valor é", valor2)
+//
