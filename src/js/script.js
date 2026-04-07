@@ -1,4 +1,4 @@
-// Declraçoes e Variaveis
+/* // Declraçoes e Variaveis
 
 // Var, Let e Const
 //var x=10;
@@ -74,10 +74,10 @@ switch(times){
         console.log("É tão ruim quanto seleção brasileira")
         break;
 }
-
+ */
 // ternaria
 
-let salario=100;
+/* let salario=100;
 let resultado = salario ==100? "Salario Certo": "salario Errado"
 console.log(resultado)
 
@@ -88,4 +88,31 @@ console.log(userlogado);
 function verificarparimpar(numero){
     return numero % 2 === 0 ?"PAR":"IMPAR";
 }
-console.log(verificarparimpar(10))
+console.log(verificarparimpar(10)) */
+
+//ESTRUTURA DE REPETIÇÃO (LAÇO DE REPETIÇÃO)
+
+/* for - Estrutura de repetição utilizada para quando sabemos previamente quantas vezes o código vai ser executado */
+/* declaração, operação, incremento */
+for(let i=1; i<=5; i++){
+    console.log("Número:", i);
+}
+/* for para array */
+
+const linguagens = ["java", "Python", "C#", "PHP"];
+
+for( let i=0; i < linguagens.length;i++){
+    console.log("Linguagem", i, ":", linguagens[i]);
+}
+
+const tecnologias =["JS", "HTML", "CSS"]
+
+for(const tech of tecnologias){
+    console.log("Estudando", tech)
+}
+
+const carros ={marca:"Volks",modelo:"Fusca",ano:1980};
+
+for( let dados in carros){
+    console.log(dados, ":", carros[dados])
+}
